@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap uap10 rescap">
+  <!--Package created by MSIX Packaging Tool version: 1.2022.330.0-->
+  <Identity Name="python" Publisher="CN=Michael Francis, O=Michael Francis, L=Auburn, S=Washington, C=US" Version="1.0.0.0" ProcessorArchitecture="x64" />
+  <Properties>
+    <DisplayName>python</DisplayName>
+    <PublisherDisplayName>Mike Francis</PublisherDisplayName>
+    <Description>None</Description>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <uap10:PackageIntegrity>
+      <uap10:Content Enforcement="on" />
+    </uap10:PackageIntegrity>
+  </Properties>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.22000.1" />
+  </Dependencies>
+  <Capabilities>
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+  <Applications>
+    <Application Id="PYTHONW" Executable="VFS\UserProgramFiles\Python\Python310\pythonw.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements BackgroundColor="transparent" DisplayName="IDLE (Python 3.10 64-bit)" Square150x150Logo="Assets\PYTHONW-Square150x150Logo.png" Square44x44Logo="Assets\PYTHONW-Square44x44Logo.png" Description="IDLE (Python 3.10 64-bit)">
+        <uap:DefaultTile Wide310x150Logo="Assets\PYTHONW-Wide310x150Logo.png" Square310x310Logo="Assets\PYTHONW-Square310x310Logo.png" Square71x71Logo="Assets\PYTHONW-Square71x71Logo.png" />
+      </uap:VisualElements>
+    </Application>
+    <Application Id="PYTHON" Executable="VFS\UserProgramFiles\Python\Python310\python.exe" EntryPoint="Windows.FullTrustApplication">
+      <uap:VisualElements BackgroundColor="transparent" DisplayName="Python 3.10 (64-bit)" Square150x150Logo="Assets\PYTHON-Square150x150Logo.png" Square44x44Logo="Assets\PYTHON-Square44x44Logo.png" Description="Python 3.10 (64-bit)">
+        <uap:DefaultTile Wide310x150Logo="Assets\PYTHON-Wide310x150Logo.png" Square310x310Logo="Assets\PYTHON-Square310x310Logo.png" Square71x71Logo="Assets\PYTHON-Square71x71Logo.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+</Package>
